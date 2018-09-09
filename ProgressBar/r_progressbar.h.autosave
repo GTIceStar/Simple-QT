@@ -1,0 +1,25 @@
+#ifndef R_PROGRESSBAR_H
+#define R_PROGRESSBAR_H
+
+#include <QWidget>
+
+class QProgeressBar;
+
+class R_ProgressBar : public QWidget
+{
+    Q_OBJECT
+public:
+    explicit R_ProgressBar(QWidget *parent = nullptr);
+private:
+    QProgeressBar*                      m_progress_bar;
+    int                                 m_coutn_step;
+    
+
+signals:
+
+public slots:
+    void slotStep();
+    void slotReset();
+};
+
+#endif // R_PROGRESSBAR_H
