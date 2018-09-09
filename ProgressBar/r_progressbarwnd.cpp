@@ -18,6 +18,7 @@ R_ProgressBarWnd::R_ProgressBarWnd(QWidget *parent) : QWidget(parent), m_count_s
   hbox_layout->addWidget(m_progress_bar);
   hbox_layout->addWidget(btn_step);
   hbox_layout->addWidget(btn_reset);
+
   setLayout(hbox_layout);
 }
 
